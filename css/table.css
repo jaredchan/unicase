@@ -1,76 +1,144 @@
-body {
-  margin:0;
-}
 img {
   vertical-align:middle;
   max-width:100%;
 }
-.container {
-  max-width:800px;
-  margin-right:auto;
-  margin-left:auto;
-}
-.hero-section {
-  
-  background-color:#bbb;
-}
 .tabletop {
-  width:600px;
-  height:320px;
-  perspective: 500px;
+  height: 300px;
+  bottom: -80px;
+  width: 140%;
+  perspective: 800px;
   position:relative;
   left:50%;
   -webkit-transform:translateX(-50%);
   transform:translateX(-50%);
 }
+
+.tabletop_2 {
+  height: 400px;
+  bottom: 100px;
+  width: 140%;
+  perspective: 100px;
+  position:relative;
+  left:50%;
+  -webkit-transform:translateX(-50%);
+  transform:translateX(-50%);
+}
+
 .tabletexture {
-  -webkit-transform:rotate3d(1,0,0,30deg);
-  transform:rotate3d(1,0,0,30deg);
+  -webkit-transform:rotate3d(1,0,0,10deg);
+  transform:rotate3d(1,0,0,10deg);
   -webkit-transform-origin: bottom center;
   transform-origin: bottom center;
-  width:600px;
   position:absolute;
-  bottom:20px;
+  bottom: 0px;
   z-index:1;
+  height: 360px;
+  filter:brightness(90%);
 }
+
+.tabletexture_2 {
+  -webkit-transform:rotate3d(1,0,0,10deg);
+  transform:rotate3d(1,0,0,10deg);
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+  position:absolute;
+  bottom: 0px;
+  z-index:1;
+  height: 100px;
+  filter:brightness(90%);
+}
+
 .tabletextureside {
-  width:600px;
   height:20px;
   position:absolute;
-  bottom:0;
+  bottom:-20px;
+  width: 140%;
+  filter:brightness(110%);
+  z-index:3;
 }
+
+.table-shadow {
+  height:177px;
+  position:absolute;
+  bottom:-180px;
+  width: 100%;
+  z-index:2;
+}
+
 .device {
   position:absolute;
   z-index:3;
 }
 .device+.shadow {
-  width:100%;
-  height:100%;
   position:absolute;
   bottom:0;
   left:0;
   background-color:rgba(0,0,0,0.3);
   content:'';
   display:block;
-  z-index:2;
+  z-index:20;
   -webkit-transform-origin: bottom center;
   transform-origin: bottom center;
   border-radius:10px;
 }
+.macbook,
+.macbook+.shadow{
+  bottom:10px;
+  width: 30%;
+  left: 14%;
+  z-index: 50;
+}
 .ipad,
 .ipad+.shadow{
-  left:350px;
-  bottom:20px;
-  width:150px;
-  height:191px;
+  width: 20%;
+  left: 45%;
+  bottom:10px;
+  z-index: 40;
 }
 .iphone,
 .iphone+.shadow{
-  left:100px;
-  bottom:20px;
-  width:60px;
-  height:117.3px;
+  width: 10%;
+  left: 68%;
+  bottom:10px;
+  z-index: 45;
 }
+.watch,
+.watch+.shadow{
+  width: 8%;
+  left: 80%;
+  bottom:10px;
+  z-index: 48;
+}
+
+.macbook-done,
+.macbook+.shadow{
+  bottom:120px;
+  width: 60%;
+  left: 14%;
+  z-index: 50;
+}
+.ipad-done,
+.ipad+.shadow{
+  width: 40%;
+  left: 45%;
+  bottom:120px;
+  z-index: 40;
+}
+.iphone-done,
+.iphone+.shadow{
+  width: 20%;
+  left: 68%;
+  bottom:120px;
+  z-index: 45;
+}
+.watch-done,
+.watch+.shadow{
+  width: 16%;
+  left: 80%;
+  bottom:120px;
+  z-index: 48;
+}
+
 .second .device {
-  bottom:40px;
+  bottom:0px;
 }

@@ -14,7 +14,7 @@ h1 {
   font-size: 60px; }
 
 h2 {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 300;
   color: #3D4351; }
 
@@ -53,7 +53,20 @@ h5 {
 
 .btn-white:hover, .btn-white:focus {
   color: #FF5274;
+  cursor: pointer;
   border-color: #FF5274; }
+
+.btn-pattern{
+  width: 54px;
+  height: 54px;
+}
+.btn-arrow{
+  width: 38px;
+  height: 38px;
+  margin: 6px;
+  background-position: center center;
+  opacity: 0.5;
+}
 
 .btn-fill {
   color: #fff;
@@ -74,8 +87,12 @@ h5 {
 .btn-large {
   padding: 15px 40px; }
 
-.btn-margin-right {
-  margin-right: 20px; }
+.btn-margin-left {
+  margin-left: 20px; }
+
+.btn-align-right{
+  float: right;
+}
 
 section.intro, section.features-extra, section.sign-up {
   background: #fff; }
@@ -347,23 +364,99 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 80px;
-  background: url("../img/hero.jpg") center center;
+  min-height: 800px;
+  background: url("../img/wall.jpg") center center;
   background-size: cover;
   position: relative; }
-  .hero .down-arrow a {
+
+.hero .down-arrow a {
+  color: #fff; }
+.hero h1 {
+  color: #fff;
+  margin-bottom: 40px; }
+.hero p.intro {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 80px; }
+.hero .hero-content {
+  padding-top: 26%; }
+
+.hero_2 {
+  min-height: 800px;
+  background: url("../img/blue-wall.jpg") center center;
+  background-size: cover;
+  position: relative; }
+
+  .hero_2 .down-arrow a {
     color: #fff; }
-  .hero h1 {
+  .hero_2 h1 {
     color: #fff;
     margin-bottom: 40px; }
-  .hero p.intro {
+  .hero_2 p.intro {
     color: #fff;
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 80px; }
-  .hero .hero-content {
+  .hero_2 .hero-content {
     padding-top: 26%; }
 
+.hero_3 {
+  min-height: 800px;
+  background: url("../img/gray-wall.jpg") center center;
+  background-size: cover;
+  position: relative; }
+
+  .hero_3 .down-arrow a {
+    color: #fff; }
+  .hero_3 h1 {
+    color: #fff;
+    margin-bottom: 40px; }
+  .hero_3 p.intro {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 80px; }
+  .hero_3 .hero-content {
+    padding-top: 26%; }
+
+  .hero_4 {
+  min-height: 800px;
+  background: url("../img/mixed-wall.jpg") center center;
+  background-size: cover;
+  position: relative; }
+
+  .hero_4 .down-arrow a {
+    color: #fff; }
+  .hero_4 h1 {
+    color: #fff;
+    margin-bottom: 40px; }
+  .hero_4 p.intro {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 80px; }
+  .hero_4 .hero-content {
+    padding-top: 26%; }
+
+.hero_5 {
+  min-height: 800px;
+  background: url("../img/dog.jpg") center center;
+  background-size: cover;
+  position: relative; }
+
+  .hero_5 .down-arrow a {
+    color: #fff; }
+  .hero_5 h1 {
+    color: #fff;
+    margin-bottom: 40px; }
+  .hero_5 p.intro {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 80px; }
+  .hero_5 .hero-content {
+    padding-top: 26%; }
 .navigation {
   -webkit-transition: all 300ms ease-in-out;
           transition: all 300ms ease-in-out;
